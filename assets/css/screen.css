@@ -250,7 +250,7 @@ h2 {
   font-weight: 300;
 }
 section.post-content img {
-  display: block;
+  display: inline-block;
   margin: 0 auto;
   max-width: 100%;
 }
