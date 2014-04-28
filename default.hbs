@@ -24,15 +24,15 @@
         {{#if @blog.logo}}<a id="blog-logo" href="{{@blog.url}}"><div class="bloglogo" style="background: url({{@blog.logo}})"></div></a>{{/if}}
         <h1 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
         {{> header-description}}
-        {{menu}}
+        {{> menu}}
     </header>
 
     {{{body}}}
 
     <footer class="site-footer">
         <div class="inner">
-            {{footer-description}}
-            <section class="copyright">&copy; {{date format="YYYY"}} <a href="/">Muhammad Negm</a>. All rights reserved.</section>
+            {{> footer-description}}
+            <section class="copyright">&copy; {{date format="YYYY"}} <a href="/">{{@blog.title}}</a>. All rights reserved.</section>
         </div>
     </footer>
 
